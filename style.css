@@ -1,0 +1,430 @@
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+ *
+ * Media Queries
+ *
+*/
+
+/*  Device = Mobile and Tablets
+    Screen = B/w 320px to 1024px
+*/
+
+@media (max-width: 1280px) {
+
+    body {
+        width: 100vw;
+        height: 100vh; 
+    }
+  
+    #welcome-section {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    #welcome-section img {
+       width: 250px;
+       border: 5px solid white;
+       border-radius: 50%;
+
+    } 
+
+    #welcome-section h1{
+        font-size: 2.5em;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding-top: 15px;
+    } 
+
+    #welcome-section h2{
+        font-size: 1.4em;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px 0 20px 0;
+    } 
+
+    #welcome-section p {
+        font-size: 1.15em;
+        /* font-style: italic; */
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #welcome-section p i {
+        padding: 0 10px;
+        color: lightgreen;
+    }
+
+    #navbar {
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        padding: 15px;
+    }
+
+    #navbar a {
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+       text-decoration: none;
+    }
+    
+
+    #navbar a:hover {
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: yellow;
+        text-decoration: none;
+    }
+
+    #about {
+        font-size: 1.2em;
+        font-family: 'Montserrat',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        font-style: normal;
+        text-align: center;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Montserrat',sans-serif;
+        padding-bottom: 50px;
+    }  
+
+    #projects h3 {
+        font-size: 2em;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bolder;
+        padding-bottom: 15px;
+        text-align: center;
+
+    }  
+
+    .project-tiles {
+        width: 100%;
+    }
+
+    .project-tile {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .project-tile p {
+        font-size: 1.4em;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bolder;
+        padding: 75px 0 15px 0;
+    }
+
+    .project-tile em {
+        font-size: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    #contact h4 {
+        font-size: 3em;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bolder;
+        padding: 15px 0 15px 0;
+        margin-bottom: 30px;
+        text-align: center;
+        
+    } 
+  
+    .contact_infos {
+        display: flex;
+        justify-content: space-evenly;
+    
+    } 
+
+    .contact_infos-phone a {
+        color: black;
+    }
+
+    /* .contact_infos-phone a:hover {
+        color: black;
+    } */
+
+    .contact_infos-email a {
+       color: black;
+    }
+
+    /* .contact_infos-email a:hover {
+        color: black;
+    } */
+
+    footer {
+        font-family: 'Montserrat', sans-serif;
+        width: 100vw;
+        background-color: #ededed;
+        padding: 15px 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+}
+
+
+/*  Device = Desktops
+    Screen = 1280px to higher resolution desktops
+*/
+
+@media (min-width: 1280px) {
+    body {
+        width: 100vw;
+        height: 100vh; 
+    }
+  
+    #welcome-section {
+        height: 100vh; 
+        margin-top: 200px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    #welcome-section img {
+       width: 350px;
+       margin-bottom: 25px;
+       border: 5px solid white;
+       border-radius: 50%;
+
+    } 
+
+    #welcome-section h1{
+        font-size: 3em;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bolder;
+        text-transform: uppercase;
+        padding: 15px 0 15px 0;
+    } 
+
+    #welcome-section h2{
+        font-size: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+        padding-bottom: 20px;
+    } 
+
+    #welcome-section p {
+        font-size: 1.15em;
+        /* font-style: italic; */
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #welcome-section p i {
+        padding: 0 10px;
+        color: lightgreen;
+    }
+
+    #navbar {
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        padding: 15px;
+    }
+
+    #navbar a {
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+       text-decoration: none;
+    }
+    
+
+    #navbar a:hover {
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: yellow;
+        text-decoration: none;
+    }
+
+    #about {
+        font-size: 1.2em;
+        font-family: 'Montserrat',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 200px;
+    }
+
+    #projects {
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Montserrat',sans-serif;
+        padding-bottom: 50px;
+
+    }  
+
+    #projects h3 {
+        font-size: 2.6em;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bolder;
+        padding-bottom: 15px;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }  
+
+    .project-tiles {
+        width: 100%;
+    }
+
+    .project-tile {
+        display: flex;
+        
+        flex-direction: column;
+        
+    }
+
+    .project-tile p {
+        font-size: 1.4em;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bolder;
+        padding: 75px 0 15px 0;
+    }
+
+    .project-tile em {
+        font-size: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+    } 
+
+    #contact h4 {
+        font-size: 3em;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: bolder;
+        padding: 15px 0 15px 0;
+        margin-bottom: 30px;
+        text-align: center;
+        
+    } 
+  
+    .contact_infos {
+        display: flex;
+        justify-content: space-evenly;
+    
+    } 
+
+    .contact_infos-phone a {
+        color: black;
+    }
+
+    /* .contact_infos-phone a:hover {
+        color: black;
+    } */
+
+    .contact_infos-email a {
+       color: black;
+    }
+
+    /* .contact_infos-email a:hover {
+        color: black;
+    } */
+
+    footer {
+        font-family: 'Montserrat', sans-serif;
+        width: 100vw;
+        background-color: #ededed;
+        padding: 15px 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+  
+}
+
+
+
+/*
+ *
+ * Stylesheet
+ *
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada');
+
